@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app__container">
+            <div class="top__bar">
+                <h2>Your Notes</h2>
+                <div class="show__more">
+                    <div class="drop__down">
+                        <ul>
+                            <li><button id="deleteAll">Delete All</button></li>
+                            <li><button id="mode">Change Mode</button></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./icons/more-vertical.svg"
+                        class="invert show__more__icon"
+                        alt="More"
+                    />
+                </div>
+            </div>
+            <div class="search__box">
+                <div class="search__icon">
+                    <img src="./icons/search.svg" class="invert" alt="Search" />
+                </div>
+                <input
+                    type="text"
+                    class="search__input"
+                    placeholder="search your notes"
+                    id="query"
+                />
+            </div>
+            <div class="notes__container"></div>
+
+            <div class="add__icon">
+                <img
+                    src="./icons/plus-square.svg"
+                    class="invert"
+                    id="addNoteBtn"
+                />
+            </div>
+
+            <div class="down__editor">
+                <div class="done__icon">
+                    <img
+                        src="./icons/check.svg"
+                        class="invert"
+                        id="doneBtn"
+                        alt=""
+                    />
+                </div>
+                <input type="text" placeholder="Title Here" class="title" />
+                <input type="text" placeholder="Your Notes" class="title" />
+                
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
